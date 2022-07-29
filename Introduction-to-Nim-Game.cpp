@@ -14,6 +14,7 @@ vector<string> split(const string &);
  */
 
 string nimGame(vector<int> pile) {
-
+  std::string result {};
+  return result;
 }
 
