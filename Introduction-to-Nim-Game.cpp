@@ -13,9 +13,22 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY pile as parameter.
  */
 
-string nimGame(vector<int> pile) {
-  std::string result {"Second"};
-  return result;
+string nimGame(vector<int> pile)
+{
+    std::string result {"First"};
+    
+    int sum = 0;
+    for (const auto& i : pile)
+    {
+        sum = sum ^ i;
+    }
+    
+    if (sum == 0)
+    {
+        result = "Second";
+    }
+    
+    return result;
 }
 
 int main()
